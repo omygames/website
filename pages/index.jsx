@@ -18,6 +18,21 @@ export default () => {
         </li>
       </ul>
       <p>more games coming soon...</p>
+      <style jsx>{`
+        h1 {
+          font-family: Arial;
+          font-weight: normal;
+        }
+        :global(body) {
+          font-family: Arial;
+        }
+        a {
+          color: rgb(0, 146, 231);
+        }
+        a:hover {
+          color: rgb(74, 181, 243);
+        }
+      `}</style>
     </div>
   )
 }
