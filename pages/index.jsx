@@ -16,6 +16,15 @@ export default () => {
           <img alt={SITE_NAME} src="/static/logo.png" />
         </h1>
       </a>
+      <div
+        style={{
+          marginTop: 10,
+        }}
+      >
+        <a href="https://github.com/OhMyGames" target="_blank" rel="noopener referrer">
+          GitHub
+        </a>
+      </div>
       <h3 className="section-title">Latest games</h3>
       <ul className="game-list">
         <li>
