@@ -19,7 +19,7 @@ export default () => {
       <h3 className="section-title">Latest games</h3>
       <ul className="game-list">
         <li>
-          <a href="#">tankgame</a> (will be published soon)
+          <a href="#">tankgame</a> <span className="hint">(will be published soon)</span>
         </li>
       </ul>
       <p className="hint">more games coming soon...</p>

@@ -5,7 +5,8 @@
   "scripts": {
     "start": "next",
     "build": "next build",
-    "start:prod": "next start"
+    "start:prod": "next start",
+    "dep": "now --target production"
   },
   "repository": "git@github.com:omygames/website.git",
   "author": "Liang <gaoxiaoliangz@gmail.com>",
