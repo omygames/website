@@ -1,3 +1,3 @@
-# omy-website
+# OhMyGames website
 
-port 3000
+OhMyGames game-listing website
