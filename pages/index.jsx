@@ -3,7 +3,7 @@ import { SITE_NAME } from '../config'
 
 export default () => {
   return (
-    <div>
+    <div className="container">
       <Head>
         <title>{SITE_NAME}</title>
         <meta
@@ -11,21 +11,52 @@ export default () => {
           content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
         />
       </Head>
-      <h1>{SITE_NAME}</h1>
-      <p>Latest games</p>
-      <ul>
+      <a href="/" className="logo-link">
+        <h1 className="logo">
+          <img alt={SITE_NAME} src="/static/logo.png" />
+        </h1>
+      </a>
+      <h3 className="section-title">Latest games</h3>
+      <ul className="game-list">
         <li>
           <a href="#">tankgame</a> (will be published soon)
         </li>
       </ul>
-      <p>more games coming soon...</p>
+      <p className="hint">more games coming soon...</p>
       <style jsx>{`
+        :global(body) {
+          font-family: Arial;
+          color: #333;
+          margin: 0;
+        }
+        .container {
+          padding: 20px;
+        }
+        .logo {
+          margin: 0;
+        }
+        .logo img {
+          max-width: 100px;
+          height: auto;
+          display: block;
+        }
+        .game-list {
+          list-style: none;
+          padding-left: 0;
+        }
+        .logo-link {
+          display: inline-block;
+        }
+        .section-title {
+          margin: 20px 0;
+        }
         h1 {
           font-family: Arial;
           font-weight: normal;
         }
-        :global(body) {
-          font-family: Arial;
+        .hint {
+          font-size: 14px;
+          opacity: 0.8;
         }
         a {
           color: rgb(0, 146, 231);
